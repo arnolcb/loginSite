@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/*Header*/
+header {
+  background-color: #264986;
+  opacity: 0.95;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+/* Estilo para los botones */
+.button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Estilo para el botón activo */
+/*.active {
+        background-color: #555;
+        color: #fff;
+      }*/
+
+/*Main*/
+main {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contenedor_todo {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.caja_trasera {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.caja_trasera div {
+  margin: 100px 40px;
+  color: black;
+  transition: all 500ms;
+}
+
+.caja_trasera div p,
+.caja_trasera div button {
+  margin-top: 30px;
+}
+
+.caja_trasera div h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.caja_trasera button {
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #264986 3.89%,
+    rgba(21, 137, 162, 0.95) 94.23%
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: all 300ms;
+}
+
+.caja_trasera button:hover {
+  /*
+    Configuracion cuando pase el mouse encima del botón
+    background: white;
+    color: #264986;
+    */
+  transform: scale(0.96);
+}
+
+/*Formularios*/
+.contenedor_login-register {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contenedor_login-register form {
+  width: 100%;
+  padding: 80px 20px;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_login-register form h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #264986;
+}
+
+.contenedor_login-register form input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #949494;
+  border-radius: 5px;
+  background: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenedor_login-register form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #264986 3.89%,
+    rgba(21, 137, 162, 0.95) 94.23%
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: all 300ms;
+}
+
+.formulario_login {
+  opacity: 1;
+  display: block;
+}
+
+.formulario_register {
+  display: none;
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 850px) {
+  main {
+    margin-top: 50px;
+  }
+
+  .caja_trasera {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .caja_trasera div {
+    margin: 0px;
+    position: absolute;
+  }
+
+  .contenedor_login-register {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+
+  .contenedor_login-register form {
+    position: relative;
+  }
+}
+
+/*Footer*/
+footer {
+  background: linear-gradient(90deg, #264986 3.89%, rgba(21, 137, 162, 0.95) 74.08%);
+  opacity: 0.95;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Poppins';
+}
+
+/* Estilo para los botones de redes sociales */
+.social {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Estilo para el icono de las redes sociales */
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilo para el texto de derechos reservados */
+.rights {
+  margin-top: 20px;
+  font-size: 12px;
+}
